@@ -29,6 +29,7 @@ jobs:
         run: |
           npm install
           npx cap add android
+          npx capacitor-assets generate --android --iconBackgroundColor '#C6613F' --iconBackgroundColorDark '#C6613F' || echo 'Icone par defaut'
           npx cap sync android
 
       - name: Compiler l'APK
