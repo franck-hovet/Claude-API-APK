@@ -1,4 +1,6 @@
-glisser deposer doc/image
+glisser deposer doc/image(par exemple avec le clavier)
 bouton envoyer se transforme en anuler quand un mesage est en cour
 widget ou les ia peuvent metre ce qu'ont leur demande
 quand ont enregistre une api ont peut choisir une option qui permet(apres enregitrement) de rendre visible la clée api avec un code(je ne sais pas quelle code entre un code personalisé ou du tel( enpriente, code...)
+quand je clique sur une image il faut que ça m'agrandit celle ci en grand pour que je puisse soumer, telecharger, ... et une croix pour revenir a la discusion
+emodji "ecouter" n'est pas beau, il faur mettre un logo simple en 2D et enlever l'ecritaux"ecouter", et enfin rajoute un autre bouton copier(2 rectangle avec les angles arondis qui sont surperposé et decalé) comme dans claude.
