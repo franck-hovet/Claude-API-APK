@@ -1,6 +1,10 @@
 glisser deposer doc/image(par exemple avec le clavier)
-bouton envoyer se transforme en anuler quand un mesage est en cour
+bouton envoyer se transforme en anuler(carre) quand un mesage est en cour
 widget ou les ia peuvent metre ce qu'ont leur demande
 quand ont enregistre une api ont peut choisir une option qui permet(apres enregitrement) de rendre visible la clée api avec un code(je ne sais pas quelle code entre un code personalisé ou du tel( enpriente, code...)
 quand je clique sur une image il faut que ça m'agrandit celle ci en grand pour que je puisse soumer, telecharger, ... et une croix pour revenir a la discusion
-emodji "ecouter" n'est pas beau, il faur mettre un logo simple en 2D et enlever l'ecritaux"ecouter", et enfin rajoute un autre bouton copier(2 rectangle avec les angles arondis qui sont surperposé et decalé) comme dans claude.
+emodji "ecouter" n'est pas beau, il faur mettre un logo simple en 2D et enlever l'ecritaux"ecouter"et "relancer"(il faut juste 3 logo), et enfin rajoute un autre bouton copier(2 rectangle avec les angles arondis qui sont surperposé et decalé) comme dans claude.(en tout il y a 3 logo en dessous de la reponse de l'ia
+il faut que ca detecte les lien pour pouvoir les ouvrir derectement avec un clic
+quand j'apuis sur "ecrit ton message" le clavier s'ouvre, la bulle monte mais le texte ne bouge pas, je suis donc obligé de faire glissé le texte a chaque fois
+theme de la discution qu'on peut choisir en apuillant sur les ... dans le volet de discution
+un bouton (avec un symbole de fleche qui est vert le bas) qui aparait dés que je remonte dans la discuction, si j'apuis sur ce bouton, il me permet de redecendre jusqu'au denier message ecrier(recent) 
