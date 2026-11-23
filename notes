@@ -3,7 +3,8 @@ bouton envoyer se transforme en anuler(carre) quand un mesage est en cour
 widget ou les ia peuvent metre ce qu'ont leur demande
 quand ont enregistre une api ont peut choisir une option qui permet(apres enregitrement) de rendre visible la clée api avec un code(je ne sais pas quelle code entre un code personalisé ou du tel( enpriente, code...)
 quand je clique sur une image il faut que ça m'agrandit celle ci en grand pour que je puisse soumer, telecharger, ... et une croix pour revenir a la discusion
-emodji "ecouter" n'est pas beau, il faur mettre un logo simple en 2D et enlever l'ecritaux"ecouter"et "relancer"(il faut juste 3 logo), et enfin rajoute un autre bouton copier(2 rectangle avec les angles arondis qui sont surperposé et decalé) comme dans claude.(en tout il y a 3 logo en dessous de la reponse de l'ia
+Édition du dernier message : Permettre à l'utilisateur de modifier sa question pour corriger une faute ou préciser sa demande sans tout réécrire(logo de crayon en 2d du memme style que les autres bouton en dessous de la reponse de l'ia
+emodji "ecouter" n'est pas beau, il faur mettre un logo simple en 2D et enlever l'ecritaux"ecouter"et "relancer"(il faut juste au max 4 logo), et enfin rajoute un autre bouton copier(2 rectangle avec les angles arondis qui sont surperposé et decalé) comme dans claude.(en tout il y a 4 logo en dessous de la reponse de l'ia, 3 tout le temp et 1 pour regenere uniquement sur la dernirer reponse de l'ia)
 il faut que ca detecte les lien pour pouvoir les ouvrir derectement avec un clic
 quand j'apuis sur "ecrit ton message" le clavier s'ouvre, la bulle monte mais le texte ne bouge pas, je suis donc obligé de faire glissé le texte a chaque fois
 theme de la discution qu'on peut choisir en apuillant sur les ... dans le volet de discution
@@ -16,3 +17,6 @@ gestion des erreur resaux(je ne sait pas si c'est deja là)
 dans le volet de conversation ilfaut que les discution soit classé par date, la plus recente en haut
 fait en sorte que je puisse epingler une discution(dans le menu ... de la discution)
 enleve le vide (1 cm)qu'il y a au dessu de tout l'afichage
+éponse directe (Swipe-to-reply) : Glisser un message pour y répondre spécifiquement et garder le fil de la discussion clair.
+recherche dans les messages : Une barre de recherche dans le haut du volet conversation(juste le symbole en 2d d'une loupe dans un bouton rond à droite du mot conversation) pour retrouver une information précise dans tout l'historique, je met un mot et il m'afiche toutes les discution qui ncontienne ce mot, ensuite quand je clique il faut que ca m'ouvre la discution selectioné, m'amenne au mot choisi et surligne le mot j'usqu'a que je fasse une chose(nouveaux message,sortir...)
+fait en sorte que les message d'erreur soit plus clair, tu laisse l'erreur en rouge mais tu fait une petite bulle qui est aussi large que la bulle de saisi mais plus fin car il ne contient que le resumé de l'erreur.
