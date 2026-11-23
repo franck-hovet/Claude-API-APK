@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - app.zip
+      - '**.zip'
 
 jobs:
   build:
@@ -21,8 +21,18 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Lire app.zip
-        run: unzip -q app.zip -d app
+      - name: Lire le zip
+        run: |
+          Z=$(find . -maxdepth 3 -iname '*.zip' | head -n 1)
+          echo "Zip trouvé : $Z"
+          [ -n "$Z" ] || { echo "Aucun zip dans le dépôt"; exit 1; }
+          unzip -q "$Z" -d app
+
+      - name: Clé de signature fixe
+        run: |
+          mkdir -p ~/.android
+          cp app/debug.keystore ~/.android/debug.keystore
+          keytool -list -keystore ~/.android/debug.keystore -storepass android | grep -i "SHA-256"
 
       - name: Préparer le projet Android
         working-directory: app
@@ -31,6 +41,9 @@ jobs:
           npx cap add android
           npx capacitor-assets generate --android --iconBackgroundColor '#C6613F' --iconBackgroundColorDark '#C6613F' || echo 'Icone par defaut'
           npx cap sync android
+          sed -i "s/versionCode 1/versionCode ${{ github.run_number }}/" android/app/build.gradle
+          sed -i "s/versionName \"1.0\"/versionName \"2.${{ github.run_number }}\"/" android/app/build.gradle
+          grep -n "versionCode\|versionName" android/app/build.gradle
 
       - name: Compiler l'APK
         working-directory: app/android
@@ -40,5 +53,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: chat-api-apk
+          name: ia-api-apk
           path: app/android/app/build/outputs/apk/debug/*.apk
